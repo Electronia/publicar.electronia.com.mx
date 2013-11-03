@@ -1,0 +1,116 @@
+﻿body{ font-family:Arial; font-size:12px;}
+
+
+/****************************** estilos para el header ************************************************************************/
+#headerMainContainer{ margin:0 auto 0 auto; border:0px solid red; height:90px; background-image:url(../ImagesAdmin/backgroundHeader.png); background-repeat:repeat-x;
+  background-position:top;   }
+#headerOptions{ border:0px solid green; margin:0 auto 0 auto; width:1000px; height:55px; }
+#headerOptions #headerLogo{border:0px solid black; height:43px; width:207px; float:left; margin-top:5px;  background-image:url(../ImagesAdmin/logoHeader.png); background-repeat:no-repeat;
+  background-position:top;}
+#headerOptions #headerLinks{border:0px solid black; height:16px; width:300px; float:right; margin:30px 0 0 0;}
+#headerLinks a { font-family:Arial; font-size:12px; text-decoration:none; color:#0B4D7D;}
+#headerLinks a:hover { text-decoration:underline;}
+#headerLinks span { margin-left:3px; margin-right:3px; color:#0B4D7D; font-size:15px; font-weight:bold;}
+#headerOptions #headerMyAcount{border:0px solid black;  height:22px; width:94px; float:left; margin:-45px 0 0 900px; font-family:Tahoma; font-size:18px; color:#333; font-weight:bold; }
+#headerName{ border:0px solid blue; margin:0 auto 0 auto; width:1000px; height:33px;  background-image:url(../ImagesAdmin/backgroundMyAcount.png); background-repeat:repeat-x;
+  background-position:top;}
+#headerName span{ font-family:Tahoma; font-size:16px; font-weight:bold; color:#FFF; margin-left:5px; margin-top:6px;}
+#headerSalirContainer { border:0px solid red; margin:0 auto 0 auto; width:1000px;  height:25px; }
+#headerSalirContainer #headerSalirImagen { border:0px solid blue; width:940px; height:25px; float:left;
+                                           background-image:url(../ImagesAdmin/headerSalir.png); background-repeat:no-repeat;
+                                           background-position:right;
+                                            }
+#headerSalirContainer #ligaSalir { border:0px solid green; width:50px; height:25px; float:left;}
+#headerSalirContainer #ligaSalir a { padding-left:10px; font-family:Arial;  font-size:15px; font-weight:bold; text-decoration:none; color:#0B4D7D;}
+#headerSalirContainer #ligaSalir a:hover{ text-decoration:underline;}
+
+/****************************** estilos para el cuerpo ************************************************************************/
+#bodyMainContainer{margin:0 auto 0 auto; border:0px solid red; height:auto;}
+#bodyContainer{border:0px solid green; margin:0 auto 0 auto; width:1000px; height:auto;}
+#tabs { border:0px solid red; height:25px; margin-top:12px; border-left:1px solid #999;}
+#tabs li{float:left;list-style:none;font-family:Tahoma;font-size:11px;font-weight:bold;color:#333333;
+         }
+#tabs li a{font-family:Tahoma;font-size:11px;font-weight:bold;color:#333333;text-decoration:none;padding-left:15px;
+            padding-right:15px;padding-top:10px;padding-bottom:2px; border-bottom:1px solid #999; border-right:1px solid #999; border-top:1px solid #999;
+            background-image:url(../ImagesAdmin/backgroundTabs.png); background-repeat:repeat-x;
+            background-position:top
+            }
+#tabs .active{background-color:#FFF;color:#333; border-bottom:0px; background-image:none; background-color:#FFF;}
+#tabs li a:hover{background-color:#333333;color:#FFFFFF;}
+#tabs ul{margin:0 0 0 0;padding-top:10px;	padding-left:0px; }
+.espacioAdmin{  border-bottom:1px solid #999; float:right;  width:551px; height:25px; margin-top:-10px;}
+#containerTabs{ border:1px solid #999; border-top:0px; padding-top:10px;}
+
+/******************************* estilos para el submenu*********************************/
+.adminSubMenuList{ border:0px solid red; width:145px;}
+.adminSubMenuList a div { border:0px solid green; width:130px; height:21px; margin-top:3px;
+                          font-family:Arial; font-size:12px; color:#0B4D7D;
+                          }
+.adminSubMenuList a div:hover  { border:0px solid blue; width:130px; height:21px; margin-top:3px;
+                                             color:#FFF; background-color:#0B4D7D; font-weight:bold;
+                                             }                        
+.adminSubMenuList a .adminSubMenuItemActivo{ border:0px solid blue; width:130px; height:21px; margin-top:3px;
+                                             color:#FFF; background-color:#0B4D7D; font-weight:bold;
+                                             }
+
+/******************************* estilos para el container*********************************/                                             
+.adminContainer{ border-left:1px dotted #999;}
+.adminContainerTitleSeccion{ font-family:Verdana; font-size:15px; color:#0B4D7D; font-weight:bold;
+                             border-bottom:1px solid #CCC; padding-bottom:3px; width:800px;
+                             padding-left:10px; margin-left:15px;
+                             }
+.adminContainerOption{ margin-top:2px; height:40px;}
+.adminContainerOption li{float:left;list-style:none;font-family:Arial;font-size:11px;font-weight:bold;color:#69A74E;}
+.adminContainerOption li a{ text-decoration:none; font-family:Arial;font-size:11px;font-weight:bold;color:#69A74E; margin-left:7px;}
+.adminContainerOption li a:hover{ text-decoration:underline;}
+.adminContainerOption ul{margin:0 0 0 4px; padding-top:2px;	padding-left:4px; }
+.adminContainerList{ border:0px solid red; width:100%; margin-left:10px;}
+.adminContainerList table { width:100%;}
+.adminContainerList .identificator { border-left:1px solid #CCC; border-top:1px solid #CCC; width:130px; padding-left:3px; text-align:left; }
+.adminContainerList .identificator span { font-family:Tahoma; font-size:12px; color:#69A74E; font-weight:bold; }
+.adminContainerList .pic { border-left:1px solid #CCC; border-top:1px solid #CCC; width:110px; padding:2px auto 2px auto;} 
+.adminContainerList .data{ border-left:1px solid #CCC; border-top:1px solid #CCC; width:115px; padding-left:5px; font-size:11px;}
+.adminContainerList .data b { font-family:Tahoma; font-size:12px;  font-weight:bold; }
+.adminContainerList .data span { font-family:Tahoma; font-size:12px; color:#69A74E; font-weight:bold; }
+.adminContainerList .description { border-left:1px solid #CCC; border-top:1px solid #CCC; font-size:11px; width:295px; padding:15px 3px 3px 3px; } 
+.adminContainerList .options{ border-left:1px solid #CCC; border-top:1px solid #CCC; border-right:1px solid #CCC; padding:5px 3px 3px 3px; height:130px;}
+.adminContainerList .options a{ font-family:Arial; font-size:12px; color:#0B4D7D; text-decoration:none;}
+.adminContainerList .options a:hover{text-decoration:underline;}
+.adminContainerList .migas { font-family:Arial; font-size:12px; color:#0B4D7D; padding:3px;}
+.adminContainerList .migas span { font-size:15px;}
+.adminContainerList .migas a { font-family:Arial; font-size:12px; color:#0B4D7D; text-decoration:none; margin-left:3px;}
+.adminContainerList .migas a:hover{ text-decoration:underline;}
+.adminContainerList .migasBattom { border-top:1px solid #CCC; font-family:Arial; font-size:12px; color:#0B4D7D; padding:3px;}
+.adminContainerList .migasBattom span { font-size:15px;}
+.adminContainerList .migasBattom a { font-family:Arial; font-size:12px; color:#0B4D7D; text-decoration:none; margin-left:3px;}
+.adminContainerList .migasBattom a:hover{ text-decoration:underline;}
+/************** Adicional para la parte de admin de mensajes ******************/
+.adminContainerList .dataMensaje{ border-left:1px solid #CCC; border-top:1px solid #CCC; width:430px; padding-left:5px; font-size:11px;}
+.adminContainerList .dataMensaje b { font-family:Tahoma; font-size:12px;  font-weight:bold; }
+.adminContainerList .dataMensaje span { font-family:Tahoma; font-size:12px; color:#69A74E; font-weight:bold; }
+.adminContainerList .statusMensaje{border-left:1px solid #CCC; border-top:1px solid #CCC; font-size:11px; width:120px; padding-top:10px; text-align:center; }
+/************** Adicional para el perfil del usuario ******************************************/
+.adminContainerList .picPhoto { border:0px solid red; width:127px;  padding:2px; margin-left:30px; margin-top:15px;}
+.adminContainerList #previewData{ font-family:Arial; font-size:13px; color:#000; width:430px; border: 0px solid red; margin-top:15px; height:400px;}
+.adminContainerList #previewData .subtitle{ margin-left:0px; font-family:Tahoma; font-size:15px; color:#0B4D7D; font-weight:bold;  border-bottom:1px dotted #333; margin-top:7px; margin-bottom:7px;}
+.adminContainerList #previewData div { margin-left:10px;}
+.adminContainerList .caja_registro{width:230px;height:22px;font-family:Arial;font-size:12px;font-weight:bold;}
+.adminContainerList .caja_seleccion{margin-right:10px;height:25px;font-family:Arial;font-size:12px;font-weight:bold;}
+.adminContainerList .telefonos{padding-right:3px;height:22px;width:50px;font-family:Arial;font-size:12px;font-weight:bold;}
+.adminContainerList .nota { font-family:Arial; font-size:9px; color:#666; padding-left:50px;}
+.adminContainerList .buttonActionRegisterButton {width:192px;height:49px;font-family:Arial;font-size:20px;font-weight:bold;
+                                                 color:#FFFFFF;background-image:url(../Images/BackgroundButtonRegister.png);
+                                                 background-repeat :repeat-x; margin-left:80px; margin-top:5px;}
+
+
+
+/****************************** estilos para el footer ************************************************************************/
+#footerMainContainer{margin:5px auto 0 auto; border:0px solid red; height:auto; height:40px; background-image:url(../ImagesAdmin/backgroundFooter.png); background-repeat:repeat-x;
+  background-position:top;}
+#footerContainer{border:0px solid green; margin:0 auto 0 auto; width:1000px; height:40px;
+                 background-image:url(../ImagesAdmin/logoFooter.png); background-repeat:no-repeat;
+            background-position:right;
+                 }
+#footerContainer span { font-family:Arial; font-size:13px; font-weight:bold; color:#666; margin-left:3px;}
+#footerContainer a{ font-family:Arial; font-size:11px; color:#666; text-decoration:none;}
+#footerContainer a:hover{ text-decoration:underline;}

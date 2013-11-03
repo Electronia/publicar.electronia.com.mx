@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<!DOCTYPE html>
+<html lang="es">
+    <head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+        <link href="<%: Url.Content("~/favicon.ico") %>" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+         <%: Styles.Render("~/Content/themes/CSS/alta.css") %>
+        <%: Styles.Render("~/Content/css") %>
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </head>
+    <body>
+       <div id="mainHeaderLight">
+        <div id="headerContentMainLight">
+                   <div id="header">
+                   		<div class="headerContent">
+                      <h1>
+                       <a href="http://www.electronia.com.mx" class="headerLogo">electronia</a>
+                       </h1>
+                       <form name="searchFree" id="searchFree" action="http://www.electronia.com.mx/api/api/articulos" method="get">
+                        <input type="text" id="boxSearchMain"  name="q"  placeholder="Escribe lo que estas buscando ..." />
+                        <input class="btn-search" id="btnSearchFree"  type="button" value="Buscar" />
+                       </form>
+                       
+                       <div id="headerLink">
+                         
+                          <a href="/DAVJET/Login.aspx" >Registrate</a>&nbsp;&nbsp;<span>|</span>
+                          <a href="" >Ingresa</a>&nbsp;&nbsp;<span>|</span>
+                          <a href="" >Ayuda</a>&nbsp;&nbsp;&nbsp;
+                       </div>
+                      </div>
+                  </div>
+                  
+                 
+             </div>
+        </div>
+           <div id="mainContainer"> 
+        	<div id="subMainContainer">
+        
+            <asp:ContentPlaceHolder ID="FeaturedContent" runat="server" />
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </section>
+       </div>
+        </div>
+        
+        
+        <div id="mainFooter">
+           <div id="footer">
+            
+                   <div class="footer_izq">
+                        <ul>
+                            <li> <a href="">Sobre Electronia.com.mx</a>&nbsp;<b>|</b>&nbsp; </li>
+                            <li> <a href="">Terminos y Condiciones</a>&nbsp;<b>|</b>&nbsp;</li>
+                            <li> <a href="">Póliticas</a>&nbsp;<b>|</b>&nbsp;</li>
+                            <li> <a href="">Directorio</a>&nbsp;<b>|</b>&nbsp;</li>
+                            <li> <a href="">Sitios Relacionados</a></li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <li>Siguenos en:</li>
+                            <li><a href="">Facebook</a>&nbsp;<b>|</b>&nbsp;</li>
+                            <li><a href="">Twiter</a></li>
+                        </ul>
+                        
+                   </div>
+                   <div class="footer_der">
+                        <div class="logoFooter"></div>
+                        <div class="derechosReservados">Todos los derechos reservados</div>
+                   </div>
+               
+           </div>  
+        </div>
+       
+
+        <%: Scripts.Render("~/bundles/jquery") %>
+        <asp:ContentPlaceHolder ID="ScriptsSection" runat="server" />
+    </body>
+</html>
